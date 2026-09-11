@@ -1,5 +1,13 @@
 # Custom Wake Word Trainer for Home Assistant
 
+## Credits
+
+- Based on [openwakeword-colab-2026](https://github.com/alfiedennen/openwakeword-colab-2026) by Alfie Dennen — the bulletproof Colab notebook this builds on. This version adds `.tflite` export and Home Assistant setup.
+- [openWakeWord](https://github.com/dscripka/openWakeWord) by David Scripka.
+- [onnx2tf](https://github.com/PINTO0309/onnx2tf) by PINTO0309.
+- [piper-phonemize-fix](https://pypi.org/project/piper-phonemize-fix/).
+- Home Assistant [openWakeWord add-on](https://github.com/home-assistant/addons/tree/master/openwakeword).
+
 Train your own [openWakeWord](https://github.com/dscripka/openWakeWord) wake word in a single Colab notebook and use it with Home Assistant. **Run all → walk away → download `.tflite` → drop it into HA.**
 
 Unlike most openWakeWord notebooks, this one outputs a **`.tflite`** file (as well as `.onnx`). That matters because the Home Assistant openWakeWord add-on **only loads `.tflite` custom models** — the `.onnx` files most notebooks produce are silently ignored. No separate conversion step.
