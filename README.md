@@ -1,5 +1,7 @@
 # Custom Wake Word Trainer for Home Assistant
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amandamarielux/openwakeword_update_sept_2026/blob/main/wakeword_trainer_HA.ipynb)
+
 ## Credits
 
 - Based on [openwakeword-colab-2026](https://github.com/alfiedennen/openwakeword-colab-2026) by Alfie Dennen — the bulletproof Colab notebook this builds on. This version adds `.tflite` export and Home Assistant setup.
